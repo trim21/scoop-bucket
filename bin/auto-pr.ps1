@@ -1,6 +1,6 @@
 param(
     # overwrite upstream param
-    [String]$upstream = "lukesampson/scoop-extras:master"
+    [String]$upstream = "Trim21/scoop-bucket:master"
 )
 
 if(!$env:SCOOP_HOME) { $env:SCOOP_HOME = Resolve-Path (scoop prefix scoop) }
