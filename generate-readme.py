@@ -1,28 +1,31 @@
 import json
-import os
-import os.path
+import pathlib
 
 
-raw = """
-```shell
-scoop bucket add trim21 https://github.com/trim21/scoop-bucket
-```
-"""
+def main():
+    lines = [
+        "```shell",
+        "scoop bucket add trim21 https://github.com/trim21/scoop-bucket",
+        "```",
+        "",
+        "",
+        "| 应用 | 介绍 | 主页 |",
+        "| :-: | :-: | :-: |",
+    ]
 
-raw += '''
-| 应用 | 介绍 | 主页 |
-| :-: | :-: | :-: |
-'''
+    proj_root = pathlib.Path(__file__).parent
 
-proj_root = os.path.dirname(__file__)
+    for file in sorted(proj_root.joinpath("bucket").iterdir()):
+        with file.open("r", encoding="utf8") as app_file:
+            app = json.load(app_file)
+            name = file.name.split(".")[0]
+            description = app["description"]
+            homepage = app["homepage"]
+            lines.append(f"| {name} | {description} | <{homepage}> |")
 
-for file in sorted(os.listdir(os.path.join(proj_root, "bucket"))):
-    with open(os.path.join(proj_root, 'bucket', file), 'r', encoding='utf8') as app_file:
-        app = json.load(app_file)
-        name = file.split('.')[0]
-        description = app['description']
-        homepage = app['homepage']
-        raw += f'| {name} | {description} | <{homepage}> |\n'
+    with open("./README.md", "w", encoding="utf8") as f:
+        f.write("\n".join(lines) + "\n")
 
-with open('./README.md', 'w', encoding='utf8') as f:
-    f.write(raw.strip() + '\n')
+
+if __name__ == "__main__":
+    main()
