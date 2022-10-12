@@ -10,7 +10,7 @@ def main():
         "",
         "",
         "| 应用 | 介绍 | 主页 |",
-        "| :-: | :-: | :-: |",
+        "| :- | :- | :- |",
     ]
 
     proj_root = pathlib.Path(__file__).parent
