@@ -10,8 +10,8 @@ scoop bucket add trim21 https://github.com/trim21/scoop-bucket
 """
 
 raw += '''
-| 应用 | 介绍 |
-|:-:|:-:|
+| 应用 | 介绍 | 主页 |
+| :-: | :-: | :-: |
 '''
 
 proj_root = os.path.dirname(__file__)
@@ -21,7 +21,8 @@ for file in sorted(os.listdir(os.path.join(proj_root, "bucket"))):
         app = json.load(app_file)
         name = file.split('.')[0]
         description = app['description']
-        raw += f'| {name} | {description} |\n'
+        homepage = app['homepage']
+        raw += f'| {name} | {description} | <{homepage}> |\n'
 
 with open('./README.md', 'w', encoding='utf8') as f:
-    f.write(raw)
+    f.write(raw.strip() + '\n')
