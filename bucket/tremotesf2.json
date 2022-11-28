@@ -5,6 +5,12 @@
     "url": "https://github.com/equeim/tremotesf2/releases/download/2.0.0/tremotesf-2.0.0-win64-Release.zip#/tremotesf-2.0.0-win64-Release",
     "hash": "3445cf9e9ef75dc20cc41460a3b723c3a49f686f3c61cd97bda3e63a94999c46",
     "checkver": "github",
+    "shortcuts": [
+        [
+            "tremotesf.exe",
+            "tremotesf"
+        ]
+    ],
     "autoupdate": {
         "url": "https://github.com/equeim/tremotesf2/releases/download/$version/tremotesf-$version-win64-Release.zip#/tremotesf-$version-win64-Release"
     }
