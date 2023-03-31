@@ -1,5 +1,5 @@
 {
-    "version": "0.0.15",
+    "version": "0.0.16",
     "description": "a cli tool to retry command",
     "homepage": "https://github.com/trim21/try",
     "license": "MIT",
