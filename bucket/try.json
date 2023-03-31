@@ -15,6 +15,12 @@
     },
     "license": "MIT",
     "bin": "try.exe",
+    "shortcuts": [
+        [
+            "retry.exe",
+            "retry"
+        ]
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
