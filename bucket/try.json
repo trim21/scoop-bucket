@@ -1,20 +1,21 @@
 {
-    "version": "0.0.16",
+    "version": "0.0.15",
     "description": "a cli tool to retry command",
     "homepage": "https://github.com/trim21/try",
     "license": "MIT",
-    "url": "https://github.com/trim21/try/releases/download/v0.0.16/try_windows_amd64.tar.gz",
-    "hash": "sha1:007a58dd3e1db5a6b9e7c1e4169dbafa559b3743",
-    "extract_dir ": ".",
     "bin": "try.exe",
-    "shortcuts": [
-        [
-            "try.exe",
-            "try"
-        ]
-    ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/trim21/try/releases/download/v$version/try_windows_amd64.tar.gz"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/trim21/try/releases/download/v$version/try_windows_amd64.tar.gz"
+            },
+            "32bit": {
+                "url": "https://github.com/trim21/try/releases/download/v$version/try_windows_386.tar.gz"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/try_checksums.txt"
+        }
     }
 }
