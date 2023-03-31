@@ -17,7 +17,7 @@
     "bin": "try.exe",
     "shortcuts": [
         [
-            "retry.exe",
+            "try.exe",
             "retry"
         ]
     ],
