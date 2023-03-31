@@ -13,9 +13,6 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/trim21/try/releases/download/v$version/try_windows_amd64.tar.gz",
-        "hash": {
-            "url": "https://github.com/trim21/try/releases/download/v$version/try_windows_amd64.tar.gz"
-        }
+        "url": "https://github.com/trim21/try/releases/download/v$version/try_windows_amd64.tar.gz"
     }
 }
