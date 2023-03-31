@@ -5,7 +5,7 @@
     "license": "MIT",
     "url": "https://github.com/trim21/try/releases/download/v0.0.16/try_windows_amd64.tar.gz",
     "hash": "sha1:007a58dd3e1db5a6b9e7c1e4169dbafa559b3743",
-    "ExtractDir": ".",
+    "extract_dir ": ".",
     "shortcuts": [
         [
             "try.exe",
