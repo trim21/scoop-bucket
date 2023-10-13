@@ -12,6 +12,12 @@
             "gopeed"
         ]
     ],
+    "shortcuts": [
+        [
+            "gopeed.exe",
+            "gopeed"
+        ]
+    ],
     "autoupdate": {
         "url": "https://github.com/GopeedLab/gopeed/releases/download/v$version/Gopeed-v$version-windows-amd64-portable.zip"
     }
