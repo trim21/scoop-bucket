@@ -19,5 +19,5 @@ jobs:
       - name: Bucket Updates
         uses: Ash258/Scoop-GithubActions@stable-win
         env:
-          GITH_EMAIL: batkiz@outlook.com
+          GITH_EMAIL: trim21.me@gmail.com
           SKIP_UPDATED: "1"
