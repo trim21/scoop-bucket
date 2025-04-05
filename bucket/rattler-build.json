@@ -5,7 +5,8 @@
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/prefix-dev/rattler-build/releases/download/v0.39.0/rattler-build-x86_64-pc-windows-msvc.exe"
+            "url": "https://github.com/prefix-dev/rattler-build/releases/download/v0.39.0/rattler-build-x86_64-pc-windows-msvc.exe",
+            "hash": "31f994bb888d2d942016cb9a245e94ccd87e097030eb83ee71582385d9babe02"
         }
     },
     "bin": "rattler-build.exe",
