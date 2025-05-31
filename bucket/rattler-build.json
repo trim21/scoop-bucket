@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/prefix-dev/rattler-build/releases/download/v0.42.1/rattler-build-x86_64-pc-windows-msvc.zip#/rattler-build-x86_64-pc-windows-msvc/rattler-build.exe",
-            "hash": "4286a2e9f9d578062928343434671ac96ee00739e7cb572115e98b5642a39440"
+            "hash": "ee051c680fbcc1b851f274c06e829aeb5d3b374b33f55d3db2902ecfe6863e60"
         },
         "arm64": {
             "url": "https://github.com/prefix-dev/rattler-build/releases/download/v0.42.1/rattler-build-aarch64-pc-windows-msvc.zip#/rattler-build-aarch64-pc-windows-msvc/rattler-build.exe",
