@@ -9,9 +9,10 @@ jobs:
     name: Excavate
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+    - uses: actions/checkout@v5
     - name: Excavate
       uses: ScoopInstaller/GithubActions@main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SKIP_UPDATED: '1'
+
