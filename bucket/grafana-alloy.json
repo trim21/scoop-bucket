@@ -6,7 +6,7 @@
     "bin": [
         [
             "alloy-windows-amd64.exe",
-            "alloy.exe"
+            "alloy"
         ]
     ],
     "architecture": {
