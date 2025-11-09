@@ -12,7 +12,6 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/grafana/alloy/releases/download/v1.11.3/alloy-windows-amd64.exe.zip",
-            "bin": "alloy-windows-amd64.exe",
             "hash": "1e3a944360f942342231ab5ab0aa513d1e8517ff409dfd74f079ef6787dd71b0"
         }
     },
