@@ -3,6 +3,12 @@
     "description": "A universal Conda package builder for Windows, macOS and Linux",
     "homepage": "https://github.com/grafana/alloy",
     "license": "Apache-2.0",
+    "bin": [
+        [
+            "allow.exe",
+            "alloy-windows-amd64.exe"
+        ]
+    ],
     "architecture": {
         "64bit": {
             "url": "https://github.com/grafana/alloy/releases/download/v1.11.3/alloy-windows-amd64.exe.zip",
