@@ -5,8 +5,8 @@
     "license": "Apache-2.0",
     "bin": [
         [
-            "alloy-windows-amd64.exe",
-            "allow"
+            "allow",
+            "alloy-windows-amd64.exe"
         ]
     ],
     "architecture": {
