@@ -1,6 +1,6 @@
 {
     "version": "1.11.3",
-    "description": "A universal Conda package builder for Windows, macOS and Linux",
+    "description": "OpenTelemetry Collector distribution with programmable pipelines",
     "homepage": "https://github.com/grafana/alloy",
     "license": "Apache-2.0",
     "bin": [
